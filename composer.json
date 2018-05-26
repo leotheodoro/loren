@@ -1,8 +1,8 @@
 {
-    "name": "loren/microframework",
+    "name": "thdrps/loren",
     "description": "A Micro Framework MVC",
     "license": "MIT",
-    "type": "project",
+    "type": "package",
     "authors": [
         { "name": "Leonardo Theodoro", "email": "simplespinheiro@gmail.com" }
     ],
@@ -15,5 +15,24 @@
     "require": {
         "php": ">=7.1.3",
         "illuminate/database": "^5.6"
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "thdr/loren",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/thdrps/loren.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-0" : {
+                        "Thdr\\Loren" : "src"
+                    }
+                }
+            }
+        }
+    ]
 }
